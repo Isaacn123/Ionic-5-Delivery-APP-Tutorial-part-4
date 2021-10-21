@@ -1,0 +1,257 @@
+
+ion-content{
+   --background:#F4FAF6 !important; 
+}
+.header-ios .main-toolbar{
+    --background:transparent !important;
+    --border-width:0 !important;
+    height:80px !important;
+    --min-height:125px !important;
+    margin: 0;
+
+
+}
+
+.header-md .main-toolbar{
+    --background:transparent !important;
+    --border-width:0 !important;
+    height:80px !important;
+    --min-height:135px !important;
+    margin: 0;
+    font-size: 14px;
+
+
+}
+
+.header-md ion-title{
+    padding-inline-start: 0;
+    font-family: Montserrat_Regular;
+    font-weight: 200;
+    padding-left: 30px;
+    color:#E5E5E5;
+    font-size:12px;
+}
+
+ion-title{
+    padding-inline-start: 0;
+    font-family: Montserrat_Regular;
+    font-weight: 200;
+    padding-left: 30px;
+    color:#d4d4d4;
+    font-size:12px;
+}
+
+.small-toolbar{
+    --background-color: transparent;
+    text-align:right;
+    margin-right: 20px;
+}
+
+.small-toolbar .icon{
+    font-size: 26px;
+    color: grey;
+}
+
+.header-md{
+    .title-toolbar{
+        text-align: left;
+        padding-left: 30px;
+        font-family: 'Montserrat';
+        font-weight: 200;
+        font-style: normal;
+    } 
+
+    .title-toolbar .title{
+        font-family: 'Libre Baskerville';
+        font-size: 18px;
+        font-weight: 700;
+        color: #3F9B99;
+    
+    }
+}
+
+.title-toolbar{
+    text-align: left;
+    padding-left: 30px;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-style: normal;
+     position: absolute;
+     top: 6px;
+     color:#A79A9A
+}
+
+.title-toolbar .title{
+    font-family: LibreBaskerville;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3F9B99 !important;
+
+}
+
+
+//// styling up the content section //////////////////////////////////////////////////////////////////////////
+
+#container{
+ 
+    display:absolute;
+    left:0;
+    right: 0;
+    text-align:center;
+    transform: translateY(-50%);
+}
+
+////// Seaerch bar section//////
+
+.searchbar{
+    padding:0px;
+    position:absolute;
+    left:0;
+    right: 0;
+    top:20%;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+ion-searchbar{
+    --box-shadow:none;
+    --border-radius:15px;
+   color:#c0bfbf;
+    //--background: #e6e6e6;
+    --background:#f7f7f7;
+}
+.searchbar-input.sc-ion-searchbar-ios
+{
+    --background: rgb(190, 190, 190) !important;
+}
+
+
+///  main featured products section/////////////////////////////////////////////////
+
+main-featured-products{
+    color:#000 !important;
+     height: 100px;
+
+     
+}
+ion-slides{
+    --bullet-background: white;
+    --bullet-background-active: yellow;
+}
+
+.card-wrapper{
+    background: #F2BC54 !important;   
+}
+
+.swiper-slide {
+    color:red;
+}
+
+.main-product-card{
+    background: #2E8B53;
+    border-radius: 20px;
+}
+
+.main-product-card img{
+    padding: 80px 0px 20px 0px;
+
+}
+
+ion-card-content {
+    text-align: left;
+}
+
+ion-card-title {
+    font-size: 14px;
+    font-family: Montserrat_Regular;
+    color: #fff;
+    font-weight: 200;
+}
+
+ion-card-subtitle {
+    font-size: 8px;
+    font-family: Montserrat_Regular;
+    font-weight: 200;
+    color: #cfcfcf;
+    padding-top: 10px;
+    // padding-bottom: 20px;
+}
+
+ion-item{
+    --background: transparent;
+    text-align: left;
+    margin-left: 0;
+    --padding-start:0px;
+    -webkit-padding-start: 0;
+    --min-height:0;
+    width: 60px !important;
+
+    ion-icon{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding:0px;
+        font-size: 13px;
+        margin-inline: 0 2px;
+    }
+}
+
+.time-icon{
+    padding-top: 6px;
+}
+
+
+// custom styles for Popular Section  //////////////////////////////////
+
+ion-segment-button{
+    --indicator-box-shadow: transparent !important;
+       border-radius: 2.5rem !important;
+       padding: 0 0.1em !important;
+    --color-checked: #33691e !important;
+    --indicator-color: #33691e  !important; /* this solution */
+    --min-height: 0 !important;
+     font-size: 10px !important;
+     color:rgb(97, 97, 97);
+    --color: #dcdddc;
+
+}
+
+.segement-toolbar{
+    --background: transparent !important; 
+    margin-bottom:30px; 
+    --height:20px; 
+    --min-height:40px; 
+    padding:0px !important;
+
+}
+
+ion-segment{
+    // --background:transparent !important;
+    --min-height: 0!important;
+}
+
+.bottomstyle{
+    height: 80px;
+    width:  85%;
+    background: white !important;
+    border-radius: 10px;
+    color: black !important;
+    padding:16px;
+    margin-top: 10px;
+    // box-shadow: 5px 3px #888888;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+   }
+  
+  
+   ion-item{
+     width: 100% !important;
+    
+  
+     ion-label{
+     h2{
+      font-size:13px !important;
+       color:#b1b1b1;
+     }
+    }
+   }

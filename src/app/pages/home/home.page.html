@@ -1,0 +1,166 @@
+<ion-header class="ion-no-border">
+   <ion-toolbar style="background:#F4FAF6" class="main-toolbar">
+    <ion-title>
+      Welcome to FreshFruits
+      </ion-title>
+     </ion-toolbar>
+</ion-header>
+<ion-header class="ion-no-border" style="background:#F4FAF6;">
+ 
+    <div class="small-toolbar">
+      <ion-icon ios="menu-outline" md="menu-sharp" name="menu" class="icon"></ion-icon>
+      </div>
+      <div class="title-toolbar">
+
+        <Strong class="title">Shop</Strong> Here    
+    
+    </div>
+   
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ 
+  <div id="container"> 
+   
+    <div class="searchbar">
+      <ion-searchbar placeholder="Find a product" no-shadow>  
+      </ion-searchbar>
+
+      <!-- Main Featured Products Section -->
+    
+      <div class="main-featured-products">
+         <!-- ion slider for the feature products -->
+
+       <ion-slides pager="true" [options]="options" (click)="appRating()">
+         <!-- slider one -->
+        <ion-slide>
+          <ion-card class="main-product-card">
+            <ion-card-content>
+            <img src="assets/milkBottle22@3x.png" />
+
+            <ion-card-title>
+             Fresh Milk 5 Litres
+          </ion-card-title> 
+          
+            <ion-card-subtitle>
+                <ion-item lines="none" full="true" (click)="appRating()">
+                 <ion-icon name="star"  color="warning"></ion-icon>
+                 <ion-icon name="star"  color="warning"></ion-icon>
+                 <ion-icon name="star"  color="warning"></ion-icon>
+                 <ion-icon name="star"  color="warning"></ion-icon>
+                </ion-item>
+
+            <div class="time-icon">
+             <ion-icon ios="timer-outline" md="timer"  color="warning"></ion-icon>
+             5 Min
+              </div>                 
+           </ion-card-subtitle>
+          
+         </ion-card-content>
+         </ion-card>
+        </ion-slide>
+<!-- Slider two -->
+        <ion-slide>
+          <ion-card class="card-wrapper main-product-card">
+            <ion-card-content>
+            <img src="assets/fruits_@2x.png" />
+
+            <ion-card-title>
+              Fruits
+          </ion-card-title> 
+          
+            <ion-card-subtitle>
+                <ion-item lines="none" full="true" (click)="appRating()">
+                 <ion-icon name="star"  color="warning"></ion-icon>
+                 <ion-icon name="star"  color="warning"></ion-icon>
+                 <ion-icon name="star"  color="warning"></ion-icon>
+                 <ion-icon name="star"  color="warning"></ion-icon>
+                </ion-item>
+
+            <div class="time-icon">
+             <ion-icon ios="timer-outline" md="timer"  color="warning"></ion-icon>
+             5 Min
+              </div>                 
+           </ion-card-subtitle>
+          
+         </ion-card-content>
+         </ion-card>
+        </ion-slide>
+
+       </ion-slides>
+      </div>
+
+      <!-- popular product display section -->
+    
+      <div class="popular-products-section">
+            
+        <ion-header class="ion-no-border" style="background:#F4FAF6" >
+          <ion-toolbar class="segement-toolbar">
+
+            <ion-segment mode="md"  [(ngModel)]="segment" (ionChange)="segmentChanged($event)"> 
+            <ion-segment-button value="0" style=" min-height:30px;">
+              <ion-label>
+                Popular
+              </ion-label>
+            </ion-segment-button>
+
+            <ion-segment-button value="1" >
+              <ion-label>
+                Diary
+              </ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="2" >
+              <ion-label>
+                Fruits
+              </ion-label>
+            </ion-segment-button>
+
+            <!-- <ion-segment-button value="3" >
+              <ion-label>
+                Fresh Joice
+              </ion-label>
+            </ion-segment-button> -->
+
+            </ion-segment>
+
+            <ion-slides pager="false" #slides [options]="sliderOptions" (ionSlideDidChange)="slidesChanged(slides)" (ionSlideDidLoad)="slidesChanged(slides)" style="padding-bottom: 50px;">
+              <ion-slide>
+               
+                <div class="bottomstyle">
+                    <ion-item lines="none">
+                      
+                      <ion-avatar slot="start">
+                        <img src="assets/oranges.png" />
+                        <!-- <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" >  -->
+                      </ion-avatar>
+                      <ion-label>
+                        <h2>Orange Imported (6 Pieces)</h2>
+                            <ion-row>
+                              <ion-icon name="star" color="warning"></ion-icon>
+                              <ion-icon name="star" color="warning"></ion-icon>
+                              <ion-icon name="star" color="warning"></ion-icon>
+                              <ion-icon name="star" color="warning"></ion-icon>
+                            </ion-row>
+  
+                      
+                      </ion-label>
+                    </ion-item>
+                
+                </div>
+              </ion-slide>
+              <ion-slide>
+                <h4>Awesome Slide 2</h4>
+              </ion-slide>
+              <ion-slide>
+                <h4>Awesome Slide 3</h4>
+              </ion-slide>
+            </ion-slides>
+              
+          </ion-toolbar>
+        </ion-header>
+      </div>
+
+  </div>
+  </div>
+
+</ion-content>
